@@ -17,7 +17,7 @@ composer_version: "2"
 disable_settings_management: true
 web_environment:
   - DRUSH_OPTIONS_URI=$DDEV_PRIMARY_URL
-nodejs_version: "16"
+nodejs_version: "20"
 corepack_enable: true
 working_dir:
   web: /var/www/html/web
