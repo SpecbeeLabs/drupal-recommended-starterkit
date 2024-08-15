@@ -15,12 +15,13 @@
         "php": ">=8.3",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^2",
+        "drupal/config_sync_without_site_uuid": "^1.0@beta",
         "drupal/core-composer-scaffold": "^11",
         "drupal/core-project-message": "^11",
         "drupal/core-recommended": "^11",
+        "drupal/dotenv": "^1.2",
         "drush/drush": "^13",
-        "oomphinc/composer-installers-extender": "^2.0",
-        "vlucas/phpdotenv": "^5.6"
+        "oomphinc/composer-installers-extender": "^2.0"
     },
     "require-dev": {
         "specbee/drupal-quality-checker": "^1.3"
