@@ -21,6 +21,7 @@
         "drupal/core-recommended": "^11",
         "drupal/dotenv": "^1.2",
         "drush/drush": "^13",
+        "ewcomposer/unpack": "dev-master",
         "oomphinc/composer-installers-extender": "^2.0"
     },
     "require-dev": {
@@ -37,6 +38,10 @@
         "assets": {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        "drupal-unpack": {
+            "type": "vcs",
+            "url": "https://gitlab.ewdev.ca/yonas.legesse/drupal-recipe-unpack.git"
         }
     },
     "minimum-stability": "dev",
@@ -57,6 +62,7 @@
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "ergebnis/composer-normalize": true,
+            "ewcomposer/unpack": true,
             "mglaman/composer-drupal-lenient": true,
             "oomphinc/composer-installers-extender": true,
             "php-http/discovery": true,
@@ -153,9 +159,11 @@
             "DrupalProject\\composer\\ScriptHandler::createLocalSettingsFile"
         ],
         "nuke": [
-            "rm -rf docroot/modules/contrib",
-            "rm -rf docroot/themes/contrib",
-            "rm -rf docroot/profiles/contrib",
+            "rm -rf web/modules/contrib",
+            "rm -rf web/themes/contrib",
+            "rm -rf web/profiles/contrib",
+            "rm -rf web/libraries",
+            "rm -rf web/recipes",
             "rm -rf vendor"
         ],
         "setup:local": [
