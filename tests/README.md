@@ -42,15 +42,16 @@ After installation, the following files and folders should be present in the `te
 **Running Tests**
 
 The `package.json` file has scripts to run the tests by opening the test runner or using the CLI:
+To ensure confidentiality and security of the username and password, it is recommended to pass them securely via CLI 
 
 ```bash
 # Example:
 
 1. Running tests from CLI
-   - npm run run:test:stage
+   - CYPRESS_username=<username> CYPRESS_password=<password> npm run run:test:stage
 
 2. Running tests in the test runner
-   - npm run open:test:stage
+   - CYPRESS_username=<username> CYPRESS_password=<password> npm run open:test:stage
 
 3. Running tests using custom config file
    - npm run run:test:with:custom:config
@@ -58,5 +59,5 @@ The `package.json` file has scripts to run the tests by opening the test runner 
 
 **Troubleshooting**
 
-- **Path Issues**: Ensure that the `tests` folder exists and that your `postinstall` script copies files to the correct location.
+- **Path Issues**: Ensure that the `tests` folder exists with a package.json 
 - **Dependencies**: Make sure all dependencies are installed correctly by running `npm install` in the `tests` folder.

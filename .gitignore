@@ -72,5 +72,7 @@ tests/cypress/videos
 tests/cypress/screenshots
 tests/cypress/reports
 tests/cypress/downloads
-new-report
+tests/new-report
+tests/runner-results
+tests/multi-reporter-config.json
 
